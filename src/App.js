@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <h1>Speed Typing Test</h1>
       <p>How fast can you type?</p>
-      <textarea ref={inputRef} disabled={!isTimeRunning} value={words} cols="50" rows="10" onChange={handleChange} />
+      <textarea ref={inputRef} disabled={!isTimeRunning} value={words} rows="10" onChange={handleChange} />
       <div className="timer">
         <button onClick={decre}>-</button>
         <h4>Time Left : {time} sec</h4>
